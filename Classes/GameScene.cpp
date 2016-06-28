@@ -25,12 +25,12 @@ bool Game::init()
     // 初始化游戏标题
     auto labelGame = Label::createWithBMFont("fonts/futura-48.fnt", "2048");
     //labelGame->setPosition(Point(labelGame->getContentSize().width/2,GAME_SCREEN_HEIGHT-labelGame->getContentSize().height/2));
-    float x = labelGame->getContentSize().width/2;
-    float y = GAME_SCREEN_HEIGHT - 30 - labelGame->getContentSize().height/2;
+    float x = labelGame->getContentSize().width/2 + 30.0f;
+    float y = GAME_SCREEN_HEIGHT - labelGame->getContentSize().height/2;
     labelGame->setPosition(Point(x, y));
-    //std::cout<<x<<"  "<<y<<std::endl;
+    std::cout<<x<<"  "<<y<<std::endl;
     this->addChild(labelGame);
-    labelGame->setScale(0.5f);
+    labelGame->setScale(1.5f);
     // 初始化游戏网格
     // 分数
     return true;
