@@ -20,7 +20,8 @@ class Splash:Layer
     bool init();
 public:
     CREATE_FUNC(Splash);
-    static Scene * createScene();
+    static Scene* createScene();
+    void jumpToGame(float t);
 };
 
 #endif /* SplashScene_hpp */

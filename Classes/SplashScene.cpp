@@ -7,6 +7,7 @@
 //
 
 #include "SplashScene.hpp"
+#include "GameScene.hpp"
 
 bool Splash::init()
 {
@@ -25,10 +26,12 @@ bool Splash::init()
     labelGameVec->setPosition(Point(GAME_SCREEN_WIDTH/2, GAME_SCREEN_HEIGHT/4));
     this->addChild(labelGameVec);
     labelGameVec->setScale(0.8f);
+    // 计划任务3秒钟之后，自动跳转到游戏场景
+    this->scheduleOnce(schedule_selector(Splash::jumpToGame), 1.0f);
     return true;
 }
 
-Scene * Splash::createScene()
+Scene* Splash::createScene()
 {
     // auto是C++11的关键字，auto关键字用于两种情况：
     // 声明变量时根据初始化表达式自动推断该变量的类型
@@ -37,4 +40,11 @@ Scene * Splash::createScene()
     auto layer = Splash::create();
     scene->addChild(layer);
     return scene;
+}
+
+void Splash::jumpToGame(float t)
+{
+    auto scene = Game::createScene();
+    Director::getInstance()->replaceScene
+    (TransitionProgressOutIn::create(0.5, scene));
 }
