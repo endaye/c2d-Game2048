@@ -18,13 +18,13 @@ bool Splash::init()
     // 显示游戏名称
     auto labelGame = Label::createWithBMFont("fonts/futura-48.fnt", "2048");
     labelGame->setPosition(Point(GAME_SCREEN_WIDTH/2, GAME_SCREEN_HEIGHT/2));
-    labelGame->setScale(1.5f);
     this->addChild(labelGame);
+    labelGame->setScale(1.5f);
     // 显示制作单位
     auto labelGameVec = Label::createWithBMFont("fonts/futura-48.fnt", "by endaye 2016.6.27");
     labelGameVec->setPosition(Point(GAME_SCREEN_WIDTH/2, GAME_SCREEN_HEIGHT/4));
-    labelGameVec->setScale(0.8f);
     this->addChild(labelGameVec);
+    labelGameVec->setScale(0.8f);
     return true;
 }
 
