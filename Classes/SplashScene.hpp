@@ -15,7 +15,7 @@
 
 USING_NS_CC;
 
-class Splash:Layer
+class Splash : Layer
 {
     bool init();
 public:

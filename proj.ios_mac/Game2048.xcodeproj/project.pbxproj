@@ -69,6 +69,7 @@
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 		FB3D4BD01D21C4F00033A2D9 /* SplashScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB3D4BCE1D21C4F00033A2D9 /* SplashScene.cpp */; };
 		FB3D4BD31D21C5230033A2D9 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB3D4BD11D21C5230033A2D9 /* GameScene.cpp */; };
+		FB475F3B1D24C8370083B705 /* MovedTiled.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB475F391D24C8370083B705 /* MovedTiled.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,8 @@
 		FB3D4BD11D21C5230033A2D9 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		FB3D4BD21D21C5230033A2D9 /* GameScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameScene.hpp; sourceTree = "<group>"; };
 		FB3D4BDB1D21CD990033A2D9 /* gamedefine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gamedefine.hpp; sourceTree = "<group>"; };
+		FB475F391D24C8370083B705 /* MovedTiled.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovedTiled.cpp; sourceTree = "<group>"; };
+		FB475F3A1D24C8370083B705 /* MovedTiled.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MovedTiled.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +318,8 @@
 				FB3D4BD11D21C5230033A2D9 /* GameScene.cpp */,
 				FB3D4BD21D21C5230033A2D9 /* GameScene.hpp */,
 				FB3D4BDB1D21CD990033A2D9 /* gamedefine.hpp */,
+				FB475F391D24C8370083B705 /* MovedTiled.cpp */,
+				FB475F3A1D24C8370083B705 /* MovedTiled.hpp */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -520,6 +525,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				FB3D4BD31D21C5230033A2D9 /* GameScene.cpp in Sources */,
+				FB475F3B1D24C8370083B705 /* MovedTiled.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

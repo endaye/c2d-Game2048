@@ -12,13 +12,14 @@
 #include <iostream>
 #include "cocos2d.h"
 #include "gamedefine.hpp"
+#include "MovedTiled.hpp"
 
 USING_NS_CC;
 
-class Game:Layer
+class Game : Layer
 {
 public:
-    static Scene* createScene();
+    static Scene * createScene();
     CREATE_FUNC(Game);
     bool init();
 };
