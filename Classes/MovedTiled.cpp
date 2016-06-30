@@ -21,6 +21,7 @@ void MovedTiled::moveTo(int r, int c)
     this->m_col = c;
     this->setPosition(Vec2(GAME_TILED_WIDTH  * c + GAME_TILED_BOARD_WIDTH * (c + 1),
                            GAME_TILED_HEIGHT * r + GAME_TILED_BOARD_WIDTH * (r + 1)));
+    CCLOG("%f, %f", this->getPositionX(), this->getPositionY());
 }
 
 bool MovedTiled::init()

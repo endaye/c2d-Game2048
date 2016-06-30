@@ -16,4 +16,13 @@
 #define GAME_TILED_BOARD_WIDTH 2
 #define GAME_ROWS 4
 #define GAME_COLS 4
+
+enum E_MOVE_DIR
+{
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT,
+};
+
 #endif /* gamedefine_hpp */
